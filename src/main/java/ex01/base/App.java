@@ -20,7 +20,18 @@ Write a version of the program that displays the greeting in a GUI window.
  */
 
 
+import java.util.Scanner;
 
 public class App {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("What is your name? ");
+        String name = in.nextLine();
+        //concat
+        String outputString = "Hello, " + name + ", nice to meet you!";
+        //output
+        System.out.println(outputString);
+
+    }
 }
 
